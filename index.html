@@ -1,4 +1,104 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(money.jpg);background-size: cover;position: relative;background-repeat: no-repeat;opacity: 9000%;">
+    
+    <div class="container-fluid">
+        <img src="payroll-logo.png" alt="">
+
+        <div class="row">
+            <div class="col col-lg-12-md-12-sm-12">
+                <h1 style="color: blue;">NET PAY CACULATOR</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col col-lg-12-md-12-sm-12">
+                <h5 style="color: blue;">Enter the gross salary below amount to caculate your net amount.</h5>
+            </div>
+        </div>
+
+        <div class="row" id="my form">
+          <div class="col col-md-4-lg-4-sm-4" style="position: relative;">
+            <form id="my form">
+            <div  style="color: blue;font-weight: bolder;">
+           Basic Salary:<label for="myInput" style="position:absolute; left:109px; top:2px;background-color:rgb(238,238,238) ; font-size: small;">KES</label>
+            <input id="basic_salary" type="text" style="height: 20px; padding-left: 10%;">
+            </div>
+          </div>
+          <div class="col col-md-4-lg-4-sm-4" style="position: relative;">
+            <div style="color: blue;font-weight: bolder;" >
+                Benefits:<label for="myInput" style="position:absolute; left:80px; top:2px;background-color:rgb(238,238,238) ; font-size: small;">KES</label>
+                <input id="benefits" type="text" style="height: 20px; padding-left: 10%;">
+                </div>
+          </div>
+          <div class="col col-md-4-lg-4-sm-4">
+            <input type="submit" value="caculate" style="background-color: gold;">
+          </div>
+        </form>
+        </div>
+      
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row" style="border-collapse: collapse;top: 10px;position: relative;width: 80%;">
+          <div class="col-lg-12-md-12-sm-12 " >
+
+            <table class="table table-bordered border-primary" style="color:yellow;opacity: 1000%;font-weight: bolder;">
+                <tr>
+                    <th>Description</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>Gross Salary</td>
+                    <td id="gross"></td>
+                </tr>
+                <tr aria-rowspan="2">
+                <td><span>NSSF</span><br>
+                  <span> NHDF</span>
+                </td>
+                <td >
+                    <span id="ns"></span><br>
+                    <span id="nd"></span>
+                </td>
+                
+                </tr>
+                <tr>
+                    <td>Final Payee</td>
+                    <td id="paye"></td>
+                </tr>
+                <tr>
+                    <td>NHIF</td>
+                    <td id="nh"></td>
+                </tr>
+                <tr>
+                    <td>Net Pay</td>
+                    <td id="net"></td>
+                </tr>
+                
+              </table>
+
+
+
+          </div>
+        </div>
+      
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+           
 
 
 
@@ -14,3 +114,54 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+
+    </div>
+
+   
+
+    <div class="topform" >
+       
+    </div>
+
+
+
+    <script src="payroll.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
