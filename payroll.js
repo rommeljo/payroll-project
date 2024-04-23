@@ -101,8 +101,8 @@ console.log("taxable_income",taxable_income)
 function calc_payee(tax){
     let payee=0
     let relief=2400
-    if (tax>=0 && tax<=24000){
-        payee=(24000*0.01)-relief
+        if (tax>=0 && tax<=24000){
+        payee=0
     }
     else if(tax>24000 && tax<=32333){
         payee=(24000*0.01)+((tax-24000)*0.25)-relief
